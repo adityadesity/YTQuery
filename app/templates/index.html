@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YTQuery - YouTube RAG Chatbot</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <span class="brand-icon">▶</span>
+            <h2>YTQuery</h2>
+        </div>
+
+        <div class="ingest-section">
+            <h3>Add a video</h3>
+
+            <input
+                type="text"
+                id="video-url"
+                placeholder="Paste YouTube URL"
+            >
+
+            <button id="ingest-btn" class="primary-btn">
+                + Ingest Video
+            </button>
+
+            <p id="ingest-status"></p>
+        </div>
+
+        <div class="video-section">
+            <h3>Your videos</h3>
+            <div id="video-list">
+                <p class="empty-state">
+                    No videos loaded yet.
+                </p>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Chat Area -->
+    <main class="main-content">
+
+        <header class="chat-header">
+            <div>
+                <h2 id="selected-video-title">
+                    Welcome to YTQuery
+                </h2>
+
+                <p id="selected-video-status">
+                    Ingest a YouTube video to get started.
+                </p>
+            </div>
+        </header>
+
+
+        <section id="chat-box" class="chat-box">
+
+            <div class="welcome-message">
+                <h1>Chat with your videos.</h1>
+                <p>
+                    Ask questions, understand concepts,
+                    and extract insights from YouTube videos.
+                </p>
+            </div>
+
+        </section>
+
+
+        <footer class="chat-footer">
+
+            <div class="chat-input-container">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask something about your video..."
+                    disabled
+                >
+
+                <button id="send-btn" disabled>
+                    ↑
+                </button>
+
+            </div>
+
+            <p class="footer-note">
+                Answers are generated using the video's transcript.
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
