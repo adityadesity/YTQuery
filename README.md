@@ -1,9 +1,9 @@
 
-# TubeQuery – YouTube RAG Chatbot
+# YTQuery – YouTube RAG Chatbot
 
-TubeQuery is a Retrieval-Augmented Generation (RAG) application that allows users to interact with YouTube videos through natural language.
+YTQuery is a Retrieval-Augmented Generation (RAG) application that allows users to interact with YouTube videos through natural language.
 
-Instead of watching an entire video to find specific information, users can ingest a video's transcript and ask questions about its content. TubeQuery retrieves relevant transcript chunks and uses a locally hosted Large Language Model (LLM) to generate context-aware answers.
+Instead of watching an entire video to find specific information, users can ingest a video's transcript and ask questions about its content. YTQuery retrieves relevant transcript chunks and uses a locally hosted Large Language Model (LLM) to generate context-aware answers.
 
 The application uses local Ollama models for embeddings and text generation, so no external LLM API key is required.
 
@@ -116,7 +116,7 @@ youtube_chatbot/
 
 ## Getting Started
 
-Follow these steps to set up and run TubeQuery locally.
+Follow these steps to set up and run YTQuery locally.
 
 ### 1. Prerequisites
 
@@ -180,7 +180,7 @@ pip install -r requirements.txt
 
 ### 5. Set Up Ollama Models
 
-TubeQuery uses two locally hosted models through Ollama.
+YTQuery uses two locally hosted models through Ollama.
 
 Pull the embedding model:
 
@@ -222,7 +222,7 @@ The application will be available at:
 http://127.0.0.1:8000/
 ```
 
-Open the URL in your browser to access TubeQuery.
+Open the URL in your browser to access YTQuery.
 
 ### 7. API Documentation
 
@@ -242,13 +242,13 @@ http://127.0.0.1:8000/redoc
 
 ## How to Use
 
-1. Open TubeQuery in your browser.
+1. Open YTQuery in your browser.
 2. Paste a valid YouTube video URL into the ingestion field.
 3. Click **Ingest Video**.
 4. The application extracts the video's transcript, splits it into chunks, generates embeddings, and stores them in ChromaDB.
 5. Once ingestion is complete, select the video from the sidebar.
 6. Enter a question related to the video.
-7. TubeQuery retrieves relevant transcript chunks and generates an answer using the LLM.
+7. YTQuery retrieves relevant transcript chunks and generates an answer using the LLM.
 8. You can delete an ingested video from the sidebar when it is no longer needed.
 
 ## API Endpoints
