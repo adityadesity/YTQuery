@@ -7,6 +7,13 @@ Instead of watching an entire video to find specific information, users can inge
 
 The application uses local Ollama models for embeddings and text generation, so no external LLM API key is required.
 
+## Application Preview
+
+### YTQuery – Chat Interface
+
+![YTQuery UI](screenshots/ytquery-ui.png)
+
+
 ## Features
 
 - **YouTube Transcript Ingestion:** Extract transcripts directly from YouTube video URLs.
